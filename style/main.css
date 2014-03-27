@@ -1,10 +1,10 @@
-@import url(fonts/clear-sans.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
+  background: #fff;
   color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px; }
 
 body {
@@ -17,8 +17,9 @@ body {
 
 h1.title {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 100;
   margin: 0;
+  color: #009BE8;
   display: block;
   float: left; }
 
@@ -53,14 +54,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #009BE8;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 3px;
-  color: white;
+  color: #fff;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -90,18 +91,21 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Score";
+  color: #fff; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Best";
+  color: #fff; }
 
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.65; }
+  line-height: 1.65;
+  color: #009BE8; }
 
 a {
-  color: #776e65;
+  color: #009BE8;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -149,7 +153,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #bce9ff;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -183,7 +187,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #009BE8;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -220,7 +224,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: #fff; }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -307,65 +311,67 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #eee4da;
+    background: #fff;
     text-align: center;
-    font-weight: bold;
+    font-weight: 100;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+  	color: #00afff;
+    background: #effaff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+  	color: #fff;
+    background: #69ceff;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    color: #fff;
+    background: #0098e1; }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    color: #fff;
+    background: #22cf63; }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    color: #fff;
+    background: #004a89; }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    color: #fff;
+    background: #006e7b; }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    color: #fff;
+    background: #006152;
+    /*box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);*/
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    color: #fff;
+    background: #00b9b2;
+    /*box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);*/
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    color: #5d7f00;
+    background: #d3ff5c;
+    /*box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);*/
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    color: #e69d00;
+    background: #fbffb3;
+    /*box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);*/
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    color: #917400;
+    background: #ffdd55;
+    /*box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);*/
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
@@ -484,18 +490,21 @@ hr {
 .game-intro {
   float: left;
   line-height: 42px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #009BE8;
+  opacity: 0.3; }
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #009BE8;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #fff;
   height: 40px;
   line-height: 42px;
   display: block;
+  font-weight: 300;
   text-align: center;
   float: right; }
 
@@ -589,7 +598,7 @@ hr {
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
+        color: #fff;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
@@ -597,7 +606,7 @@ hr {
           display: none; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        color: #fff; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {

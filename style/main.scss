@@ -10,9 +10,9 @@ $tile-border-radius: 3px;
 $mobile-threshold: $field-width + 20px;
 
 $text-color: #776E65;
-$bright-text-color: #f9f6f2;
+$bright-text-color: #fff;
 
-$tile-color: #eee4da;
+$tile-color: #fff;
 $tile-gold-color: #edc22e;
 $tile-gold-glow-color: lighten($tile-gold-color, 15%);
 
@@ -319,7 +319,7 @@ hr {
 
     background: $tile-color;
     text-align: center;
-    font-weight: bold;
+    font-weight: 100;
     z-index: 10;
 
     font-size: 55px;

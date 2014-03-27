@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Lanenar";
+    src: url("LANENAR_.ttf");
+    src: url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lanenar";
+    src: url("LANENAR_.ttf");
+    src: url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lanenar";
+    src: url("LANENAR_.ttf");
+    src: url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf"),
+         url("LANENAR_.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
